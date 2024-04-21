@@ -3,7 +3,7 @@
 CyberSpeed is a cross-platform mobile application developed using React Native and TypeScript. It allows users to search for movies in an open API movie database, view detailed information about each movie, and explore actors and reviews.
 
 ## SDK Used for getting movies
-We have used SDK/npm npm module named React-Native-movies-sdk developed specifcally for this project, details for the same can be found at the npm page.
+We have used SDK/npm npm module named [React-Native-movies-sdk](https://www.npmjs.com/package/react-native-movies-sdk) developed specifcally for this project, details for the same can be found at the npm page.
 
 ## Assumptions
 
