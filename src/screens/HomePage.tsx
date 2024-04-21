@@ -21,7 +21,7 @@ const HomeScreen: React.FC = (props) => {
 
   // Fetch movies on component mount
   useEffect(() => {
-    props.getMovie("Jawan"); // Initial movie fetch, by default "Jawan"
+    props.getMovie("titanic"); // Initial movie fetch, by default "Jawan"
   }, []);
 
   // Update loading state based on movie list changes
@@ -36,7 +36,7 @@ const HomeScreen: React.FC = (props) => {
 
     // Fetch movies based on search query
     if (val === "") {
-      props.getMovie("Jawan"); // Fetch default movies if query is empty, keeping it as "Jawan for now".
+      props.getMovie("titanic"); // Fetch default movies if query is empty, keeping it as "Jawan for now".
     } else {
       props.getMovie(val); // Fetch movies based on search query
     }
