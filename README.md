@@ -1,79 +1,53 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# CyberSpeed React Native App
 
-# Getting Started
+CyberSpeed is a cross-platform mobile application developed using React Native and TypeScript. It allows users to search for movies in an open API movie database, view detailed information about each movie, and explore actors and reviews.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
 
-## Step 1: Start the Metro Server
+- **Home Screen**: Displays 10 random movies and includes a search bar for searching movies.
+- **Search Functionality**: Enables users to search for movies based on title or keywords.
+- **Movie Detail Screen**: Shows detailed information about each movie, including title, description, poster, actors, and reviews.
+- **Cross-Platform Compatibility**: Runs smoothly on both iOS and Android devices.
+- **Business Logic SDK**: Utilizes the `react-native-movies-sdk`, a network business logic SDK in TypeScript for fetching movie data from the API. Includes functions for fetching random movies, searching for movies, and retrieving movie details.
+- **State Management**: Integrates Redux for managing the application's state, including movie data, search results, and selected movie details, with Redux Saga for handling asynchronous actions.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Bonus Features
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- **Optimized SDK Usage in CyberSpeed**: Implements optimized usage of the `react-native-movies-sdk` within the CyberSpeed app, ensuring efficient performance and minimal resource consumption.
+- **State Manager Optimization**: Implements optimizations in Redux to further improve performance and efficiency for the CyberSpeed app.
 
-```bash
-# using npm
-npm start
+## Setup Instructions
 
-# OR using Yarn
-yarn start
-```
-
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
+1. Clone the repository:
 
 ```bash
-# using npm
-npm run android
+git clone <repository_url>
 
-# OR using Yarn
-yarn android
-```
+2. Install Dependencies:
 
-### For iOS
+cd CyberSpeed
+npm install
 
-```bash
-# using npm
-npm run ios
+3. Run the application
 
-# OR using Yarn
-yarn ios
-```
+npx react-native run-android   # For Android
+npx react-native run-ios       # For iOS
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## Project Struture
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+CyberSpeed/
+├── src/
+│   ├── components/            # Reusable components
+│   ├── navigation/            # Navigation setup
+│   ├── screens/               # Screen components
+│   ├── store/                 # Redux store setup
+│   │   ├── actions/           # Redux actions
+│   │   ├── reducers/          # Redux reducers
+│   │   └── sagas/             # Redux Saga middleware
+│   ├── sdk/                   # Network business logic SDK
+│   └── ...
+└── ...
 
-## Step 3: Modifying your App
 
-Now that you have successfully run the app, let's modify it.
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
