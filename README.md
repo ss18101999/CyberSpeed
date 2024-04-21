@@ -4,7 +4,8 @@ CyberSpeed is a cross-platform mobile application developed using React Native a
 
 ## SDK Used for getting movies
 We have used SDK/npm npm module named [React-Native-movies-sdk](https://www.npmjs.com/package/react-native-movies-sdk) developed specifcally for this project, details for the same can be found at the npm page.
-
+- [Github](https://github.com/ss18101999/react-native-movies-sdk)
+- [npm](https://www.npmjs.com/package/react-native-movies-sdk)
 ## Assumptions
 
 - We have to make certain assumptions while making this application, as the first hurdle was to get the movies API to get the data, we managed to get one, but in that API, we were only getting movie name, type, poster, year only. So, in certain screens we have to use static data to show the functionality like in the movie detail screen we have used static data for reviews, rating & description.
