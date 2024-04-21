@@ -10,7 +10,7 @@ We have used SDK/npm npm module named [React-Native-movies-sdk](https://www.npmj
 
 - We have to make certain assumptions while making this application, as the first hurdle was to get the movies API to get the data, we managed to get one, but in that API, we were only getting movie name, type, poster, year only. So, in certain screens we have to use static data to show the functionality like in the movie detail screen we have used static data for reviews, rating & description.
 
-- The SDK, which we are using only have the api end point that provides, movies data based on title or keyword, it's doesn't provide an endpoint to get random movies, so instead for the homepage currently we are displaying movies recommendation based on a specific movie search which is "Jawan" in this case.
+- The SDK, which we are using only have the api end point that provides, movies data based on title or keyword, it's doesn't provide an endpoint to get random movies, so instead for the homepage currently we are displaying movies recommendation based on a specific movie search which is "Titanic" in this case.
 ## Features
 
 - **Home Screen**: Displays 10 random movies and includes a search bar for searching movies.
@@ -60,9 +60,10 @@ CyberSpeed/
 
 ## Previews
 
-![gif-20240421-142354](https://github.com/ss18101999/CyberSpeed/assets/49299771/bf02bafc-e7fd-48d2-b558-c5c4403167ab) 
+![gif-20240421-153223](https://github.com/ss18101999/CyberSpeed/assets/49299771/45c812ad-c0c9-4d3f-beda-9eca6496c314)
+![gif-20240421-152930](https://github.com/ss18101999/CyberSpeed/assets/49299771/27079931-93d4-46e4-af92-a1b722690ea6)
+![gif-20240421-153347](https://github.com/ss18101999/CyberSpeed/assets/49299771/5329ade9-a68f-4504-b2d1-a08f2644ed33)
 
-![gif-20240421-142254](https://github.com/ss18101999/CyberSpeed/assets/49299771/cec6d55d-c214-4d60-9b3e-1fc0a79c3cb7)
 
 
 
